@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = (props) => {
     // let isLoggedIn = props.isLoggedIn;
@@ -21,15 +22,20 @@ const Navbar = (props) => {
         {/* Login - SignUp - LogOut - Dashboard */}
         <div className='flex items-center gap-x-4'>
 
-            <button className='text-black bg-green-200 py-[8px] 
-            px-[12px] rounded-[8px] border'>
-                Log in
-            </button>
-
-            <button  className='bg-green-200 text-black py-[8px] 
-            px-[12px] rounded-[8px] border'>
-                Sign up
-            </button>
+            <Link to='/login'>
+                <button className='text-black bg-green-200 py-[8px] 
+                px-[12px] rounded-[8px] border'>
+                    Log in
+                </button>
+            </Link>
+            
+            <Link to='/signup'>
+                <button  className='bg-green-200 text-black py-[8px] 
+                px-[12px] rounded-[8px] border'>
+                    Sign up
+                </button>
+            </Link>
+            
             
         </div>
 
