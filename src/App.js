@@ -10,7 +10,7 @@ import BuyersDashboard from "./pages/BuyersDashboard";
 import Shop from "./components/Buyers/Shop";
 import BuyerLogin from "./components/Buyers/BuyerLogin";
 import WoolDetails from "./components/Buyers/WoolDetails/WoolDetails";
-
+import Footer from "./components/Footer"
 import { useState } from "react";
 
 function App() {
@@ -42,6 +42,7 @@ function App() {
 				/>
 				<Route path="/why-wool" element={<WhyWool />} />
 			</Routes>
+			<Footer/>
 		</div>
 	);
 }
