@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const WhyWool = () => {
-  return (
-    <div>WhyWool</div>
-  )
-}
+	return <div>WhyWool</div>;
+};
 
-export default WhyWool
+export default WhyWool;

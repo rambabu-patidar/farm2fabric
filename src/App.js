@@ -1,4 +1,6 @@
 import { Route, Routes } from "react-router-dom";
+import { useState } from "react";
+
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
@@ -10,8 +12,8 @@ import BuyersDashboard from "./pages/BuyersDashboard";
 import Shop from "./components/Buyers/Shop";
 import BuyerLogin from "./components/Buyers/BuyerLogin";
 import WoolDetails from "./components/Buyers/WoolDetails/WoolDetails";
-
-import { useState } from "react";
+import ItemDetailPage from "./components/Farmers/DetailPage/ItemDetailPage";
+import NewsPage from "./pages/News";
 
 function App() {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -29,7 +31,14 @@ function App() {
 					path="/signup"
 					element={<Signup setIsLoggedIn={setIsLoggedIn} />}
 				/>
+				<Route path="/news" element={<NewsPage />} />
+
 				<Route path="/farmers-dashboard" element={<FarmersDashboard />} />
+				<Route
+					path="/farmers-dashboard/wool-details/:uniqueCode"
+					element={<ItemDetailPage />}
+				/>
+
 				<Route path="/buyers-dashboard" element={<BuyersDashboard />} />
 				<Route
 					path="/buyers-dashboard/basic-details"
