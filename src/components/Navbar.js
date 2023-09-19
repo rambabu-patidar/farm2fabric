@@ -14,7 +14,7 @@ const Navbar = (props) => {
         </Link>
 
         {/* nav-links */}
-        <nav className='text-richblack-100 flex gap-x-7 justify-center items-center'>
+        <nav className='flex text-teal-900 font-semibold text-lg gap-x-7 justify-center items-center'>
             <a href="/">Home</a>
             <Link to="/why-wool">Why Wool?</Link>
             <Link to="/news">News</Link>
@@ -62,6 +62,7 @@ const Navbar = (props) => {
                     </button>
                 </Link>
             }
+            <div id="google_translate_element"></div>
         </div>
       
 

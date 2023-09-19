@@ -1,6 +1,7 @@
 import React from "react";
 
 import woolImage from "../../assets/wool.jpg";
+import RequestServiceModal from "./RequestServiceModal";
 
 const WoolItem = (props) => {
 	const showDetailHandler = () => {
@@ -54,6 +55,7 @@ const WoolItem = (props) => {
 			>
 				Details
 			</button>
+			<RequestServiceModal/>
 		</li>
 	);
 };
