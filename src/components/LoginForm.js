@@ -78,7 +78,7 @@ return (
           </span>
 
           <Link to="#">
-              <p className='text-xs mt-1 text-blue-100 max-w-max ml-auto'>
+              <p className='text-xs mt-1 text-blue-500 max-w-max ml-auto'>
                   Forgot Password
               </p>
           </Link>

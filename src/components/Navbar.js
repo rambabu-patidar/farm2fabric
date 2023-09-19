@@ -7,18 +7,20 @@ const Navbar = (props) => {
     let isLoggedIn = props.isLoggedIn;
     let setIsLoggedIn = props.setIsLoggedIn;
   return (
-    <header className='flex gap-x-6 p-6 justify-between text-black bg-green-400'>
+    <header className='flex gap-x-8 p-6 justify-evenly text-black bg-green-400'>
         {/* Logo */}
-        <img src={logoImg} alt="logo" width={60} height={32} loading="lazy" className='mr-5' />
+        <Link to="/">
+            <img src={logoImg} alt="logo" width={60} height={32} loading="lazy" className='mr-5' />
+        </Link>
 
         {/* nav-links */}
         <nav className='text-richblack-100 flex gap-x-7 justify-center items-center'>
-            <a href="/#">Home</a>
-            <a href="/#">Why Wool?</a>
-            <a href="/#">News</a>
-            <a href="/#">About</a>
-            <a href="/#">Prices</a>
-            <a href="/#">Contact</a>
+            <a href="/">Home</a>
+            <Link to="/why-wool">Why Wool?</Link>
+            <Link to="/news">News</Link>
+            <Link to="/about">About</Link>
+            <Link to="/prices">Prices</Link>
+            <Link to="/contact">Contact</Link>
         </nav>
 
         {/* Login - SignUp - LogOut - Dashboard */}

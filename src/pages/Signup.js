@@ -5,9 +5,9 @@ import Template from '../components/Template'
 const Signup = ({setIsLoggedIn}) => {
   return (
     <Template
-      title="Join the millions learning to code with StudyNotion for free"
-      desc1="Build skills for today, tomorrow, and beyond."
-      desc2="Education to future-proof your career."
+      title="Join our woolly community of dedicated farmers and enthusiasts."
+      desc1="Sign up today to embark on a journey where the softest fibers meet sustainable practices."
+      desc2="Together, we're weaving a future that's as warm and inviting as the wool from our farms."
       image={signupImg}
       formtype="signup"
       setIsLoggedIn={setIsLoggedIn}

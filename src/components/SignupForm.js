@@ -17,7 +17,7 @@ const SignupForm = ({setIsLoggedIn}) => {
 
     const [showPassword, setShowPassword] = useState(false);
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-    const [accountType, setAccountType] = useState("student");
+    const [accountType, setAccountType] = useState("farmers");
 
     function changeHandler(event) {
 
@@ -51,7 +51,14 @@ const SignupForm = ({setIsLoggedIn}) => {
         console.log("printing Final account data ");
         console.log(finalData);
 
-        navigate("/dashboard");
+        if(accountType === "farmers"){
+          navigate("/farmersdashboard");
+        }
+
+        else{
+          navigate("/buyersdashboard")
+        }
+        
 
     }
 
@@ -60,24 +67,24 @@ const SignupForm = ({setIsLoggedIn}) => {
     <div>
         {/* Farmers-Buyers tab */}
         <div
-        className='flex bg-richblack-800 p-1 gap-x-1 my-6 rounded-full max-w-max'>
+        className='flex bg-green-200 p-1 gap-x-1 my-3 rounded-full max-w-max'>
 
             <button
-            className={`${accountType === "student" 
+            className={`${accountType === "farmers" 
             ?
-              "bg-green-700 text-richblack-5"
+              "bg-green-700 text-white"
             :"bg-transparent text-richblack-200"} py-2 px-5 rounded-full transition-all duration-200`}
-            onClick={()=> setAccountType("student")}>
-                Student
+            onClick={()=> setAccountType("farmers")}>
+                For Farmers
             </button>
 
             <button
-            className={`${accountType === "instructor" 
+            className={`${accountType === "buyers" 
             ?
-              "bg-green-700 text-richblack-5"
+              "bg-green-700 text-white"
             :"bg-transparent text-richblack-200"} py-2 px-5 rounded-full transition-all duration-200`}
-            onClick={() => setAccountType("instructor")}>
-                Instructor
+            onClick={() => setAccountType("buyers")}>
+                For Buyers
             </button>
         </div>
 
