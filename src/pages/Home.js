@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css'
 import heroimg from "../assets/logo-igmg.jpg"
 import pic2 from "../assets/pic2.jpg"
+import Map from '../components/Home/Map'
 
 
 const Home = () => {
@@ -33,6 +34,8 @@ const Home = () => {
           </p>
         </div>
       </div>
+
+      <Map/>
     </div>
   )
 }
