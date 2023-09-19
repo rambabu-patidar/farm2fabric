@@ -1,16 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logoImg from '../assets/logo.png'
+import logoImg from '../assets/logo2.png'
 import { toast } from 'react-hot-toast'
 
 const Navbar = (props) => {
     let isLoggedIn = props.isLoggedIn;
     let setIsLoggedIn = props.setIsLoggedIn;
   return (
-    <header className='flex gap-x-8 p-6 justify-evenly text-black bg-green-400'>
+    <header className='flex gap-x-8 p-4 justify-evenly text-black bg-green-400 w-full'>
         {/* Logo */}
         <Link to="/">
-            <img src={logoImg} alt="logo" width={60} height={32} loading="lazy" className='mr-5' />
+            <img src={logoImg} alt="logo" width={60} height={32} loading="lazy" className='' />
         </Link>
 
         {/* nav-links */}

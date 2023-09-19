@@ -7,6 +7,7 @@ import Signup from "./pages/Signup";
 import WhyWool from "./pages/WhyWool"
 import FarmersDashboard from "./pages/FarmersDashboard"
 import BuyersDashboard from "./pages/BuyersDashboard"
+import Prices from "./pages/Prices";
 
 import { useState } from 'react'
 
@@ -24,6 +25,7 @@ function App() {
 				<Route path="/farmersdashboard" element={<FarmersDashboard/>}/>
 				<Route path="/buyersdashboard" element={<BuyersDashboard/>}/>
 				<Route path="/why-wool" element={<WhyWool/>}/>
+				<Route path="/prices" element={<Prices/>}/>
 			</Routes>
 		</div>
 	)
