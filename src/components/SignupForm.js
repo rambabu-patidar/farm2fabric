@@ -49,7 +49,7 @@ const SignupForm = ({ setIsLoggedIn }) => {
 		if (accountType === "farmers") {
 			navigate("/farmersdashboard");
 		} else {
-			navigate("/buyersdashboard");
+			navigate("/buyers-dashboard");
 		}
 	}
 
