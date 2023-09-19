@@ -1,24 +1,36 @@
 import React, { useState } from "react";
+
+import Hero from "./Hero";
 import WoolItem from "./WoolItem";
 import NewWoolForm from "./NewWoolForm";
 import ItemDetail from "./ItemDetail";
+import Resources from "./Resources";
 
 const Farmer = (props) => {
 	const [isAddingNewWool, setIsAddingNewWool] = useState(false);
+	const [showResources, setShowResources] = useState(false);
 	const [itemDetailIsShown, setItemDetailIsShown] = useState(false);
+	const [shownItem, setShownItem] = useState();
 
 	const addWoolHandler = () => {
-		setIsAddingNewWool((prevState) => {
-			return !isAddingNewWool;
-		});
+		setIsAddingNewWool((prevState) => !isAddingNewWool);
+		setShowResources(false);
 	};
 
 	const showResourceHandler = () => {
 		// here is the logic for showing resources
+		setShowResources((prevState) => !showResources);
+		setIsAddingNewWool(false);
 	};
 
-	const showItemDetailHandler = () => {
+	const showItemDetailHandler = (uniqueCode) => {
 		setItemDetailIsShown(true);
+		const itemToDisplay = props.woolItems.find(
+			(item) => item.uniqueCode === uniqueCode
+		);
+		setIsAddingNewWool(false);
+		setShowResources(false);
+		setShownItem(itemToDisplay);
 	};
 
 	const hideItemDetailHandler = () => {
@@ -27,45 +39,19 @@ const Farmer = (props) => {
 	return (
 		<section className="font-sans">
 			<div className="p-3">
-				<div className="p-6 mb-5 bg-[#f2f2f2] rounded-2xl flex flex-col justify-center items-center gap-8 min-h-screen bg-center">
-					<h1 className="p-3 pb-10 text-6xl text-center font-medium underline">
-						Welcome {props.username}
-					</h1>
-
-					<div className="w-full p-9  flex flex-col items-center justify-center gap-5">
-						<h3 className="font-medium text-3xl">Your stats</h3>
-						<ul className="w-full flex justify-evenly items-center p-8">
-							<li className="text-base text-3xl">
-								Total Wool: {props.totalWool}
-							</li>
-							<li className="text-base text-3xl">Sold: {props.soldWool}</li>
-							<li className="text-base text-3xl">
-								Your Unique Id: {props.farmer_uid}
-							</li>
-						</ul>
-					</div>
-
-					<ul className="w-full flex justify-center items-center gap-8">
-						<li className="text-base">
-							<button
-								className="text-white bg-black rounded-full p-3 text-center"
-								onClick={addWoolHandler}
-							>
-								{isAddingNewWool ? "Close your form" : "Add new wool"}
-							</button>
-						</li>
-						<li className="text-base">
-							<button
-								className="text-white bg-black rounded-full p-3 text-center"
-								onClick={showResourceHandler}
-							>
-								Training Material
-							</button>
-						</li>
-					</ul>
-				</div>
+				<Hero
+					username={props.username}
+					totalWool={props.totalWool}
+					soldWool={props.soldWool}
+					farmer_uid={props.farmer_uid}
+					addWoolHandler={addWoolHandler}
+					isAddingNewWool={isAddingNewWool}
+					showResourceHandler={showResourceHandler}
+					showResources={showResources}
+				/>
 
 				{isAddingNewWool && <NewWoolForm />}
+				{showResources && <Resources />}
 
 				<div className="p-6 mb-5 bg-[#f2f2f2] rounded-2xl flex flex-col justify-center items-center">
 					<h1 className="text-5xl font-normal p-3 pb-10 text-center">
@@ -75,13 +61,13 @@ const Farmer = (props) => {
 					{itemDetailIsShown && (
 						<ItemDetail
 							onClose={hideItemDetailHandler}
-							// key={item.uniqueCode}
-							// uniqueCode={item.uniqueCode}
-							// quality={item.quality}
-							// quantity={item.quantity}
-							// location={item.location}
-							// producedTime={item.producedTime}
-							// color={item.color}
+							key={shownItem.uniqueCode}
+							uniqueCode={shownItem.uniqueCode}
+							quality={shownItem.quality}
+							quantity={shownItem.quantity}
+							location={shownItem.location}
+							producedTime={shownItem.producedTime}
+							color={shownItem.color}
 						/>
 					)}
 

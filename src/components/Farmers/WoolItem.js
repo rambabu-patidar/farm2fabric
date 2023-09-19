@@ -4,11 +4,11 @@ import woolImage from "../../assets/wool.jpg";
 
 const WoolItem = (props) => {
 	const showDetailHandler = () => {
-		props.showDetail();
+		props.showDetail(props.uniqueCode);
 	};
 
 	return (
-		<li className="p-3 rounded border-solid border border-black border-2 shadow-lg">
+		<li className="p-5 rounded border-solid border border-black border-2 shadow-lg">
 			<article>
 				<h2 className="text-center text-3xl mb-6 border-b border-grey border-3 border-solid py-3">
 					Wool's Unique ID: {props.uniqueCode}
@@ -23,23 +23,23 @@ const WoolItem = (props) => {
 					</div>
 					<div className="flex flex-col">
 						<ul>
-							<li className="flex justify-between items-center gap-6 py-2">
+							<li className="flex justify-between items-center gap-6 pt-2">
 								<span className="font-bold">Quantity:</span>{" "}
 								<span>{props.quantity}</span>
 							</li>
-							<li className="flex justify-between items-center gap-6 py-2">
+							<li className="flex justify-between items-center gap-6 pt-2">
 								<span className="font-bold">Quality:</span>{" "}
 								<span>{props.quality}</span>
 							</li>
-							<li className="flex justify-between items-center gap-6 py-2">
+							<li className="flex justify-between items-center gap-6 pt-2">
 								<span className="font-bold">Location:</span>{" "}
 								<span>{props.location}</span>
 							</li>
-							<li className="flex justify-between items-center gap-6 py-2">
+							<li className="flex justify-between items-center gap-6 pt-2">
 								<span className="font-bold">Produced Time:</span>{" "}
 								<span>{props.producedTime}</span>
 							</li>
-							<li className="flex justify-between items-center gap-6 py-2">
+							<li className="flex justify-between items-center gap-6 pt-2">
 								<span className="font-bold">Color:</span>{" "}
 								<span>{props.color}</span>
 							</li>

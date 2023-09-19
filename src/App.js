@@ -14,37 +14,36 @@ import WoolDetails from "./components/Buyers/WoolDetails/WoolDetails";
 import { useState } from "react";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+	const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  return (
-    <div>
-      <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
-      <Routes>
-        <Route path="/" element={<Home isLoggedIn={isLoggedIn} />} />
-        <Route
-          path="/login"
-          element={<Login setIsLoggedIn={setIsLoggedIn} />}
-        />
-        <Route
-          path="/signup"
-          element={<Signup setIsLoggedIn={setIsLoggedIn} />}
-        />
-        <Route path="/farmersdashboard" element={<FarmersDashboard />} />
-        <Route path="/farmersdashboard" element={<FarmersDashboard />} />
-        <Route path="/buyers-dashboard" element={<BuyersDashboard />} />
-        <Route
-          path="/buyers-dashboard/basic-details"
-          element={<BuyerLogin />}
-        />
-        <Route path="/buyers-dashboard/shop" element={<Shop />} />
-        <Route
-          path="/buyers-dashboard/wool-details/:id"
-          element={<WoolDetails />}
-        />
-        <Route path="/why-wool" element={<WhyWool />} />
-      </Routes>
-    </div>
-  );
+	return (
+		<div>
+			<Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+			<Routes>
+				<Route path="/" element={<Home isLoggedIn={isLoggedIn} />} />
+				<Route
+					path="/login"
+					element={<Login setIsLoggedIn={setIsLoggedIn} />}
+				/>
+				<Route
+					path="/signup"
+					element={<Signup setIsLoggedIn={setIsLoggedIn} />}
+				/>
+				<Route path="/farmers-dashboard" element={<FarmersDashboard />} />
+				<Route path="/buyers-dashboard" element={<BuyersDashboard />} />
+				<Route
+					path="/buyers-dashboard/basic-details"
+					element={<BuyerLogin />}
+				/>
+				<Route path="/buyers-dashboard/shop" element={<Shop />} />
+				<Route
+					path="/buyers-dashboard/wool-details/:id"
+					element={<WoolDetails />}
+				/>
+				<Route path="/why-wool" element={<WhyWool />} />
+			</Routes>
+		</div>
+	);
 }
 
 export default App;

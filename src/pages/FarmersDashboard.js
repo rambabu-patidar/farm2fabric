@@ -8,7 +8,7 @@ const DUMMY_WOOL_ITEMS = [
 		quality: "good",
 		location: "Jabalpur",
 		producedTime: "some time",
-		color: "white",
+		color: "orange",
 	},
 	{
 		uniqueCode: "code2",
