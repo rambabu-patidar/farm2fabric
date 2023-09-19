@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css'
 import heroimg from "../assets/logo-igmg.jpg"
 import pic2 from "../assets/pic2.jpg"
+import pic3 from "../assets/pic3.jpg"
 
 
 const Home = () => {
@@ -26,11 +27,24 @@ const Home = () => {
         </div>
         <div className="page2-content">
           <h1>About Us</h1>
-          <p>WoolFarm Connect is a dedicated online platform designed to cater to the needs 
+          <p>Farm2Fabric is a dedicated online platform designed to cater to the needs 
             of both wool farmers and buyers within the wool industry. Our comprehensive services 
             bring together the world of wool, making it easier for wool producers and purchasers 
             to connect, trade, and access valuable resources.
           </p>
+        </div>
+      </div>
+      <div className="page3">
+        <div className="page3-content">
+          <h1>Wear Wool Not Fossil Fuel</h1>
+          <p>Every 25 minutes, an Olympic-sized pool of oil is used to make synthetic clothing. 
+            Textiles - such as polyester, nylon and acrylic - are a highly reliant product group 
+            made from fossil fuel. 100% natural, renewable and biodegradable, Merino wool can 
+            help you to buy less and buy better.
+          </p>
+        </div>
+        <div className="page3-img">
+          <img src={pic3} alt="pic3" height={10} />
         </div>
       </div>
     </div>
