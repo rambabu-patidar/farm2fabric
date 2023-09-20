@@ -18,7 +18,6 @@ const Navbar = (props) => {
             <a href="/">Home</a>
             <Link to="/why-wool">Why Wool?</Link>
             <Link to="/news">News</Link>
-            <Link to="/about">About</Link>
             <Link to="/prices">Prices</Link>
             <Link to="/contact">Contact</Link>
         </nav>
