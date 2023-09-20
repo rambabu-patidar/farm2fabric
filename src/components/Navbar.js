@@ -15,18 +15,18 @@ const Navbar = (props) => {
 
         {/* nav-links */}
         <nav className='flex text-teal-900 font-semibold text-lg gap-x-7 justify-center items-center pl-5'>
-            <a href="/">Home</a>
-            <Link to="/why-wool">Why Wool?</Link>
-            <Link to="/news">News</Link>
-            <Link to="/prices">Prices</Link>
-            <Link to="/footer">Contact</Link>
+            <a className='hover:scale-110 transition-all' href="/">Home</a>
+            <Link className='hover:scale-110 transition-all' to="/why-wool">Why Wool?</Link>
+            <Link className='hover:scale-110 transition-all' to="/news">News</Link>
+            <Link className='hover:scale-110 transition-all' to="/prices">Prices</Link>
+            <Link className='hover:scale-110 transition-all' to="/footer">Contact</Link>
         </nav>
 
         {/* Login - SignUp - LogOut - Dashboard */}
         <div className='flex items-center gap-x-4'>
             { !isLoggedIn &&
                 <Link to="/login">
-                    <button className='bg-richblack-800 text-richblack-100 py-[8px] 
+                    <button className='text-teal-900 bg-custom-color hover:scale-110 transition-all py-[8px] 
                     px-[12px] rounded-[8px] border border-richblack-700'>
                         Log in
                     </button>
@@ -34,7 +34,7 @@ const Navbar = (props) => {
             }
             { !isLoggedIn &&
                 <Link to="/signup">
-                    <button  className='bg-richblack-800 text-richblack-100 py-[8px] 
+                    <button  className='text-teal-900 bg-custom-color hover:scale-110 transition-all py-[8px] 
                     px-[12px] rounded-[8px] border border-richblack-700'>
                         Sign up
                     </button>
@@ -46,7 +46,7 @@ const Navbar = (props) => {
                         setIsLoggedIn(false);
                         toast.success("Logged Out");
                     }}
-                    className='bg-richblack-800 text-richblack-100 py-[8px] 
+                    className='text-teal-900 bg-custom-color hover:scale-110 transition-all py-[8px] 
                     px-[12px] rounded-[8px] border border-richblack-700'>
                         Log Out
                     </button>
@@ -55,7 +55,7 @@ const Navbar = (props) => {
             { isLoggedIn &&
                 <Link to="/dashboard">
                     <button
-                     className='bg-richblack-800 text-richblack-100 py-[8px] 
+                     className='text-teal-900 bg-custom-color hover:scale-110 transition-all py-[8px] 
                     px-[12px] rounded-[8px] border border-richblack-700'>
                         Dashboard
                     </button>

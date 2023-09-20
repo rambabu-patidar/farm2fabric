@@ -47,13 +47,17 @@ const Home = () => {
 			{/* page 3 */}
 			<div className="page3">
 				<div className="page3-content">
-					<h1>Wear Wool Not Fossil Fuel</h1>
+					<h1>Wear Wool, Not Fossil Fuel</h1>
 					<p>
 						Every 25 minutes, an Olympic-sized pool of oil is used to make
 						synthetic clothing. Textiles - such as polyester, nylon and acrylic
 						- are a highly reliant product group made from fossil fuel. 100%
 						natural, renewable and biodegradable, Merino wool can help you to
-						buy less and buy better.
+						buy less and buy better. Wool is a renewable and biodegradable natural
+						fiber, aligning with sustainability goals and eco-friendly textile 
+						practices. Wool plays a crucial role in Indian culture and traditions. 
+						It is used to create traditional textiles, shawls, carpets, and other 
+						handicrafts, preserving cultural heritage.
 					</p>
 				</div>
 				<div className="page3-img">
