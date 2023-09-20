@@ -47,7 +47,7 @@ const SignupForm = ({ setIsLoggedIn }) => {
 		console.log(finalData);
 
 		if (accountType === "farmers") {
-			navigate("/farmersdashboard");
+			navigate("/farmers-dashboard");
 		} else {
 			navigate("/buyers-dashboard");
 		}
