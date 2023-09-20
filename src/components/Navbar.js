@@ -16,11 +16,11 @@ const Navbar = (props) => {
 
         {/* nav-links */}
         <nav className='flex text-teal-900 font-semibold text-lg gap-x-7 justify-center items-center pl-5'>
-            <a href="/">Home</a>
-            <Link to="/why-wool">Why Wool?</Link>
-            <Link to="/news">News</Link>
-            <Link to="/prices">Prices & Trends</Link>
-            <a href="#footer">Contact</a>
+            <a className='hover:scale-110 transition-all' href="/">Home</a>
+            <Link className='hover:scale-110 transition-all' to="/why-wool">Why Wool?</Link>
+            <Link className='hover:scale-110 transition-all' to="/news">News</Link>
+            <Link className='hover:scale-110 transition-all' to="/prices">Prices & Trends</Link>
+            <a className='hover:scale-110 transition-all' href="#footer">Contact</a>
         </nav>
 
         {/* Login - SignUp - LogOut - Dashboard */}
