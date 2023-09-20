@@ -3,6 +3,8 @@ import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
+// INPUT VALUES ARE HARDCODED.
+
 const SignupForm = ({ setIsLoggedIn }) => {
 	const navigate = useNavigate();
 
@@ -93,7 +95,8 @@ const SignupForm = ({ setIsLoggedIn }) => {
 							name="firstName"
 							onChange={changeHandler}
 							placeholder="Enter First Name"
-							value={formData.firstName}
+							// value={formData.firstName}
+							value="YK"
 							className="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"
 						/>
 					</label>
@@ -108,7 +111,8 @@ const SignupForm = ({ setIsLoggedIn }) => {
 							name="lastName"
 							onChange={changeHandler}
 							placeholder="Enter Last Name"
-							value={formData.lastName}
+							// value={formData.lastName}
+							value="Dojo"
 							className="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"
 						/>
 					</label>
@@ -124,7 +128,8 @@ const SignupForm = ({ setIsLoggedIn }) => {
 							name="email"
 							onChange={changeHandler}
 							placeholder="Enter Email Address (optional)"
-							value={formData.email}
+							//value={formData.email}
+							value="test@test.com"
 							className="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"
 						/>
 					</label>
@@ -141,7 +146,8 @@ const SignupForm = ({ setIsLoggedIn }) => {
 							name="mobile"
 							onChange={changeHandler}
 							placeholder="10-digit number"
-							value={formData.mobile}
+							// value={formData.mobile}
+							value="9987421365"
 							className="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"
 						/>
 					</label>
@@ -158,7 +164,8 @@ const SignupForm = ({ setIsLoggedIn }) => {
 							name="password"
 							onChange={changeHandler}
 							placeholder="Enter Password"
-							value={formData.password}
+							// value={formData.password}
+							value="123"
 							className="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"
 						/>
 						<span
@@ -183,7 +190,8 @@ const SignupForm = ({ setIsLoggedIn }) => {
 							name="confirmPassword"
 							onChange={changeHandler}
 							placeholder="Confirm Password"
-							value={formData.confirmPassword}
+							// value={formData.confirmPassword}
+							value="123"
 							className="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"
 						/>
 						<span
