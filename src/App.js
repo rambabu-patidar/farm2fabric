@@ -12,15 +12,10 @@ import BuyersDashboard from "./pages/BuyersDashboard";
 import Shop from "./components/Buyers/Shop";
 import BuyerLogin from "./components/Buyers/BuyerLogin";
 import WoolDetails from "./components/Buyers/WoolDetails/WoolDetails";
-<<<<<<< HEAD
-import Footer from "./components/Footer"
-import { useState } from "react";
-=======
 import ItemDetailPage from "./components/Farmers/DetailPage/ItemDetailPage";
 import NewsPage from "./pages/News";
 import WhyWoolPage from "./pages/WhyWool";
->>>>>>> f8528f826f99bc28ca726954925520693af8e0a6
-
+import Footer from "./components/Footer";
 function App() {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
 
