@@ -16,6 +16,7 @@ import ItemDetailPage from "./components/Farmers/DetailPage/ItemDetailPage";
 import NewsPage from "./pages/News";
 import WhyWoolPage from "./pages/WhyWool";
 import Footer from "./components/Footer";
+import Prices from "./pages/Prices";
 function App() {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -35,6 +36,7 @@ function App() {
 
 				<Route path="/news" element={<NewsPage />} />
 				<Route path="/why-wool" element={<WhyWoolPage />} />
+				<Route path="/prices" element={<Prices />} />
 
 				<Route path="/farmers-dashboard" element={<FarmersDashboard />} />
 				<Route

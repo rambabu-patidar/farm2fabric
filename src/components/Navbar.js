@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { toast } from 'react-hot-toast'
 import logo from '../assets/f2f.png'
+import "./Navbar.css"
 
 const Navbar = (props) => {
     let isLoggedIn = props.isLoggedIn;
@@ -15,11 +16,19 @@ const Navbar = (props) => {
 
         {/* nav-links */}
         <nav className='flex text-teal-900 font-semibold text-lg gap-x-7 justify-center items-center pl-5'>
+<<<<<<< HEAD
             <a className='hover:scale-110 transition-all' href="/">Home</a>
             <Link className='hover:scale-110 transition-all' to="/why-wool">Why Wool?</Link>
             <Link className='hover:scale-110 transition-all' to="/news">News</Link>
             <Link className='hover:scale-110 transition-all' to="/prices">Prices</Link>
             <Link className='hover:scale-110 transition-all' to="/footer">Contact</Link>
+=======
+            <a href="/">Home</a>
+            <Link to="/why-wool">Why Wool?</Link>
+            <Link to="/news">News</Link>
+            <Link to="/prices">Prices & Trends</Link>
+            <a href="#footer">Contact</a>
+>>>>>>> 32da39e41690d6910f0c9e4055c9e2bb22f5cf57
         </nav>
 
         {/* Login - SignUp - LogOut - Dashboard */}
