@@ -4,6 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-hot-toast";
 import { useState } from "react";
 
+// INPUT VALUE ARE HARDCODED
+
 const LoginForm = ({ setIsLoggedIn }) => {
 	const navigate = useNavigate();
 
@@ -40,7 +42,8 @@ const LoginForm = ({ setIsLoggedIn }) => {
 				</p>
 				<input
 					type="email"
-					value={formData.email}
+					// value={formData.email}
+					value="test@test.com"
 					onChange={changeHandler}
 					placeholder="Enter email address (optional)"
 					name="email"
@@ -55,7 +58,8 @@ const LoginForm = ({ setIsLoggedIn }) => {
 				<input
 					required
 					type="tel"
-					value={formData.mobile}
+					// value={formData.mobile}
+					value="9236578920"
 					onChange={changeHandler}
 					placeholder="10-digit number"
 					name="mobile"
@@ -70,7 +74,8 @@ const LoginForm = ({ setIsLoggedIn }) => {
 				<input
 					required
 					type={showPassword ? "text" : "password"}
-					value={formData.password}
+					// value={formData.password}
+					value="123"
 					onChange={changeHandler}
 					placeholder="Enter Password"
 					name="password"
