@@ -1,25 +1,25 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logoImg from '../assets/logo2.png'
 import { toast } from 'react-hot-toast'
+import logo from '../assets/f2f.png'
 
 const Navbar = (props) => {
     let isLoggedIn = props.isLoggedIn;
     let setIsLoggedIn = props.setIsLoggedIn;
   return (
-    <header className='flex gap-x-8 p-4 justify-evenly text-black bg-green-400 w-full'>
+    <header className='flex gap-x-9 p-4 justify-evenly text-black bg-green-400 w-full'>
         {/* Logo */}
         <Link to="/">
-            <img src={logoImg} alt="logo" width={60} height={32} loading="lazy" className='' />
+            <img src={logo} alt="logo" width={250} height={32} loading="lazy" className='' />
         </Link>
 
         {/* nav-links */}
-        <nav className='flex text-teal-900 font-semibold text-lg gap-x-7 justify-center items-center'>
+        <nav className='flex text-teal-900 font-semibold text-lg gap-x-7 justify-center items-center pl-5'>
             <a href="/">Home</a>
             <Link to="/why-wool">Why Wool?</Link>
             <Link to="/news">News</Link>
             <Link to="/prices">Prices</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/footer">Contact</Link>
         </nav>
 
         {/* Login - SignUp - LogOut - Dashboard */}

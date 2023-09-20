@@ -54,7 +54,7 @@ function App() {
 				/>
 				<Route path="/why-wool" element={<WhyWool />} />
 			</Routes>
-			<Footer/>
+			<Footer id="footer"/>
 		</div>
 	);
 }
