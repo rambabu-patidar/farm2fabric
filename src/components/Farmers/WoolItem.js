@@ -1,13 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-import woolImage from "../../assets/wool.jpg";
 import RequestServiceModal from "./RequestServiceModal";
 
 const WoolItem = (props) => {
-	const showDetailHandler = () => {
-		props.showDetail(props.uniqueCode);
-	};
-
 	return (
 		<li className="p-5 rounded border-solid border border-black border-2 shadow-lg">
 			<article>
@@ -17,7 +13,7 @@ const WoolItem = (props) => {
 				<div className="sm:flex-col flex justify-center items-center gap-6 ">
 					<div>
 						<img
-							src={woolImage}
+							src={props.image}
 							alt="farmer wool"
 							className="w-64 h-64 object-cover rounded-lg"
 						/>
@@ -49,13 +45,13 @@ const WoolItem = (props) => {
 				</div>
 			</article>
 
-			<button
-				onClick={showDetailHandler}
+			<Link
+				to={`/farmers-dashboard/wool-details/${props.uniqueCode}`}
 				className="mt-5 block w-full text-center text-white bg-black rounded-full p-3 "
 			>
 				Details
-			</button>
-			<RequestServiceModal/>
+			</Link>
+			<RequestServiceModal />
 		</li>
 	);
 };

@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import WhyWool from "../components/WhyWool/WhyWool";
 
-const WhyWool = () => {
-  return (
-    <div>WhyWool</div>
-  )
-}
+const WhyWoolPage = () => {
+	return <WhyWool />;
+};
 
-export default WhyWool
+export default WhyWoolPage;

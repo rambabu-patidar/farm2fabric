@@ -5,6 +5,7 @@ module.exports = {
 		extend: {
 			backgroundColor: {
 				"custom-color": "#EDEDD3",
+				"theme-color": "#4ade80",
 			},
 			animation: {
 				"slide-down": "slide-down 300ms ease-out forwards",
