@@ -44,7 +44,7 @@ const News = () => {
 						</p>
 						<a
 							href="#latest-news" // Replace with the actual section ID for the latest news
-							className="text-xl md:text-2xl bg-black text-white py-2 px-6 rounded-full transition duration-300 ease-in-out"
+							className="text-xl md:text-2xl bg-black text-white py-2 px-6 rounded-full transition hover:bg-theme-color hover:text-black duration-300 ease-in-out"
 						>
 							Read Latest News
 						</a>

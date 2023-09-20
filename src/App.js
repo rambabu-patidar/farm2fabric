@@ -14,6 +14,7 @@ import BuyerLogin from "./components/Buyers/BuyerLogin";
 import WoolDetails from "./components/Buyers/WoolDetails/WoolDetails";
 import ItemDetailPage from "./components/Farmers/DetailPage/ItemDetailPage";
 import NewsPage from "./pages/News";
+import WhyWoolPage from "./pages/WhyWool";
 
 function App() {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -31,7 +32,9 @@ function App() {
 					path="/signup"
 					element={<Signup setIsLoggedIn={setIsLoggedIn} />}
 				/>
+
 				<Route path="/news" element={<NewsPage />} />
+				<Route path="/why-wool" element={<WhyWoolPage />} />
 
 				<Route path="/farmers-dashboard" element={<FarmersDashboard />} />
 				<Route
