@@ -96,7 +96,7 @@ const SignupForm = ({ setIsLoggedIn }) => {
 							onChange={changeHandler}
 							placeholder="Enter First Name"
 							// value={formData.firstName}
-							value="YK"
+							value="Kushagra"
 							className="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"
 						/>
 					</label>
@@ -112,7 +112,7 @@ const SignupForm = ({ setIsLoggedIn }) => {
 							onChange={changeHandler}
 							placeholder="Enter Last Name"
 							// value={formData.lastName}
-							value="Dojo"
+							value="Mishra"
 							className="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"
 						/>
 					</label>

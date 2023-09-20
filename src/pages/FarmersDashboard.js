@@ -38,7 +38,7 @@ const DUMMY_WOOL_ITEMS = [
 const FarmersDashboard = () => {
 	return (
 		<Farmer
-			username="Ayush Modi"
+			username="Kushagra Mishra"
 			totalWool={20}
 			soldWool={8}
 			farmer_uid={"JKL2675WE9"}
