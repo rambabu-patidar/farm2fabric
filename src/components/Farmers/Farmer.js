@@ -37,7 +37,7 @@ const Farmer = (props) => {
 				{isAddingNewWool && <NewWoolForm />}
 				{showResources && <Resources />}
 
-				<div className="p-6 mb-5 bg-[#f2f2f2] rounded-2xl flex flex-col justify-center items-center">
+				<div className="p-6 mb-5 bg-custom-color rounded-2xl flex flex-col justify-center items-center">
 					<h1 className="text-5xl font-normal p-3 pb-10 text-center">
 						Your wools list
 					</h1>

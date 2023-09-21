@@ -5,7 +5,7 @@ import RequestServiceModal from "./RequestServiceModal";
 
 const WoolItem = (props) => {
 	return (
-		<li className="p-5 rounded border-solid border border-black border-2 shadow-lg">
+		<li className="p-5 bg-white rounded border-solid border border-black border-2 shadow-lg">
 			<article>
 				<h2 className="text-center text-3xl mb-6 border-b border-grey border-3 border-solid py-3">
 					Wool's Unique ID: {props.uniqueCode}

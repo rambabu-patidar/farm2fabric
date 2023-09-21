@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = (props) => {
 	return (
-		<div className="p-6 mb-5 bg-[#f2f2f2] rounded-2xl flex flex-col justify-center items-center gap-8 min-h-[80%]">
+		<div className="p-6 mb-5 bg-green-200 rounded-2xl flex flex-col justify-center items-center gap-8 min-h-[80%]">
 			<h1 className="p-3 pb-10 text-6xl text-center font-medium underline">
 				Welcome {props.username}
 			</h1>
