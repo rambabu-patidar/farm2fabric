@@ -21,6 +21,7 @@ import Prices from "./pages/Prices";
 import ServiceProviderDashboard from "./pages/ServiceProviderDashboard";
 import Tracking from "./components/Buyers/ProductTracking/Tracking";
 import WoolTracking from "./components/Farmers/WoolTracking";
+import { WoolServices } from "./components/ServiceProviders/WoolServices";
 
 function App() {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -68,6 +69,10 @@ function App() {
 				<Route
 					path="/service-provider-dashboard"
 					element={<ServiceProviderDashboard />}
+				/>
+				<Route
+					path="/service-provider-dashboard/wool/:id"
+					element={<WoolServices />}
 				/>
 			</Routes>
 			<Footer id="footer" />

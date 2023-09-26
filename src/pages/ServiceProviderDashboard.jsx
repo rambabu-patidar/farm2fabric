@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import ProvidedServicesModal from "./ProvidedServicesModal";
+import ProvidedServicesModal from "../components/ServiceProviders/ProvidedServicesModal";
 
 export default function ServiceProviderDashboard() {
 	const navigate = useNavigate();
@@ -22,6 +22,7 @@ export default function ServiceProviderDashboard() {
 			img: "/images/wool2.jpg",
 		},
 	]);
+	
 	const handleServiceUpdate = (requestId, service) => {
 		setWoolRequests((prevRequests) =>
 			prevRequests.map((request) =>
@@ -48,6 +49,9 @@ export default function ServiceProviderDashboard() {
 		}
 	};
 
+  const handleClick = (e, id) => {
+    navigate(`/service-provider-dashboard/wool/${id}`)
+  }
 	return (
 		<div className="container mx-auto p-4">
 			<ProvidedServicesModal />
@@ -57,7 +61,8 @@ export default function ServiceProviderDashboard() {
 					{woolRequests.map((request) => (
 						<div
 							key={request.id}
-							className="bg-white p-4 w-1/4 shadow-md rounded-lg mt-4 flex justify-center flex-col items-center gap-2"
+              onClick={(e) => handleClick(e, request.id)}
+							className="bg-white cursor-pointer p-4 w-1/4 shadow-md rounded-lg mt-4 flex justify-center flex-col items-center gap-2"
 						>
 							<h3 className="text-teal-700 text-2xl font-semibold">
 								Wool ID: {request.wool_id}
@@ -80,16 +85,6 @@ export default function ServiceProviderDashboard() {
 							>
 								Status: {request.status}
 							</div>
-							{request.status === "Pending" && (
-								<button
-									className="bg-green-500 text-white px-4 py-2 rounded-lg mt-2"
-									onClick={() =>
-										handleServiceUpdate(request.id, "Shearing Services")
-									}
-								>
-									Mark as Completed
-								</button>
-							)}
 						</div>
 					))}
 				</div>

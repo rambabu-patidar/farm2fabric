@@ -31,6 +31,11 @@ const servicesList = [
 		image: "images/Services/transport.avif",
 		requested: false,
 	},
+	{
+		name: "Storage and Warehousing",
+		image: "images/Services/storage.png",
+		requested: false,
+	},
 ];
 
 export default function ProvidedServicesModal() {
