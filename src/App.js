@@ -17,6 +17,7 @@ import NewsPage from "./pages/News";
 import WhyWoolPage from "./pages/WhyWool";
 import Footer from "./components/Footer";
 import Prices from "./pages/Prices";
+import ServiceProviderDashboard from "./pages/ServiceProviderDashboard";
 function App() {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -55,6 +56,7 @@ function App() {
 					element={<WoolDetails />}
 				/>
 				<Route path="/why-wool" element={<WhyWool />} />
+				<Route path="/service-provider-dashboard" element={<ServiceProviderDashboard />} />
 			</Routes>
 			<Footer id="footer"/>
 		</div>

@@ -3,27 +3,32 @@ import React, { useState } from "react";
 const servicesList = [
 	{
 		name: "Wool shearing",
-		image: "images/wool-farmer.jpg",
+		image: "images/Services/shearing.jpg",
+		requested: false,
+	},
+	{
+		name: "Wool scouring",
+		image: "images/Services/scouring.png",
 		requested: false,
 	},
 	{
 		name: "Wool grading",
-		image: "images/sorting.avif",
+		image: "images/Services/sorting.avif",
 		requested: false,
 	},
 	{
 		name: "Wool dyeing",
-		image: "images/dyeing.jpg",
+		image: "images/Services/dyeing.jpg",
 		requested: false,
 	},
 	{
 		name: "Quality Assessment",
-		image: "images/quality.jpg",
+		image: "images/Services/quality.jpg",
 		requested: false,
 	},
 	{
 		name: "Transportation assistance",
-		image: "images/transport.avif",
+		image: "images/Services/transport.avif",
 		requested: false,
 	},
 ];
