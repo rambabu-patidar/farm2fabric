@@ -4,28 +4,49 @@ import heroimg from "../assets/logo-igmg.jpg";
 import pic2 from "../assets/pic2.jpg";
 import pic3 from "../assets/pic3.jpg";
 import Map from "../components/Home/Map";
+import { motion } from "framer-motion";
 
 const Home = () => {
 	return (
 		<div className="home">
 			{/* page-1(hero section) */}
 			<div className="page-1">
-				<div className="heading">
-					<h1 className="hero-title">From Nature, For Nature</h1>
+				<motion.div
+					initial={{ y: "4rem", opacity: 0 }}
+					animate={{ y: 0, opacity: 1 }}
+					transition={{
+					duration: 2,
+					type: "ease-in",
+					}} 
+					className="heading"
+				>
+					<h1 className="hero-title">
+						From Nature, For Nature	
+					</h1>
 					<p>
 						From Farm to Fiber: Uniting Wool Producers and Enthusiasts. Spinning
 						Stories, Weaving Dreams: Your Source for Quality Wool.
 					</p>
 					<button className="btn">Learn More</button>
-				</div>
-
-				<img
-					className="hero-img"
-					src={heroimg}
-					alt="hero img"
-					width={200}
-					height={400}
-				/>
+				</motion.div>
+					
+				<motion.div
+					initial={{ x: "9rem", opacity: 0 }}
+					animate={{ x: 0, opacity: 1 }}
+					transition={{
+					duration: 2,
+					type: "ease-in",
+					}}
+				 	className="image-container"
+				>
+					<img
+						className="hero-img"
+						src={heroimg}
+						alt="hero img"
+						
+					/>
+				</motion.div>
+				
 			</div>
 
 			{/* page-2 */}
