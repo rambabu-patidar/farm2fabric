@@ -56,7 +56,7 @@ const Prices = () => {
         Get Latest Prices and Trends
       </h1>
       <div className="flex justify-center">
-        <img src="images/trends.png" className="w-100 h-100 mt-10" />
+        <img alt="prices" src="images/trends.png" className="w-100 h-100 mt-10" />
       </div>
     </div>
   );

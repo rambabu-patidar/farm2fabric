@@ -88,14 +88,20 @@ const ItemDetail = (props) => {
 							{/* mt-5 block w-full text-center text-white bg-black rounded-full
 								p-3 */}
 							<div>
-								<button className="mt-5 block w-full text-center text-white bg-black rounded-full p-3">
+								<button className="mt-5 block w-full text-center text-white bg-teal-900 rounded-full p-3">
 									Edit your wool
 								</button>
 								<button
 									onClick={() => navigate("/farmers-dashboard")}
-									className="mt-5 block w-full text-center text-white bg-black rounded-full p-3"
+									className="mt-5 block w-full text-center text-white bg-teal-900 rounded-full p-3"
 								>
 									Go Back
+								</button>
+								<button
+									onClick={() => navigate("/farmers-dashboard/wool-track")}
+									className="mt-5 block w-full text-center text-white bg-teal-900 rounded-full p-3"
+								>
+									Track your requested services
 								</button>
 							</div>
 						</div>

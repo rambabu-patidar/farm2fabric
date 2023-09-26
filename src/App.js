@@ -18,6 +18,8 @@ import WhyWoolPage from "./pages/WhyWool";
 import Footer from "./components/Footer";
 import Prices from "./pages/Prices";
 import ServiceProviderDashboard from "./pages/ServiceProviderDashboard";
+import Tracking from "./components/Buyers/ProductTracking/Tracking";
+import WoolTracking from "./components/Farmers/WoolTracking";
 function App() {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -56,6 +58,8 @@ function App() {
 					element={<WoolDetails />}
 				/>
 				<Route path="/why-wool" element={<WhyWool />} />
+				<Route path="/buyers-dashboard/tracking" element={<Tracking />} />
+				<Route path="/farmers-dashboard/wool-track" element={<WoolTracking />} />
 				<Route path="/service-provider-dashboard" element={<ServiceProviderDashboard />} />
 			</Routes>
 			<Footer id="footer"/>

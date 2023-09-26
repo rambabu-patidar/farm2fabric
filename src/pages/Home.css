@@ -4,7 +4,7 @@
 .page-1{
     overflow-y: hidden;
     display: flex;
-    gap: 4rem;
+    /* gap: 4rem; */
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -30,9 +30,18 @@
     font-weight: 600;
 }
 
-.hero-img{
-    height: 550px;
+.image-container{
     width: 40%;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-img{
+    height: 33rem;
+    width: 33rem;
     object-fit: cover;
     border-radius: 2rem;
     box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
