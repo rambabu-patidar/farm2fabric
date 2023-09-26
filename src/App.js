@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
+import { FaArrowUp } from "react-icons/fa";
 
 import "./App.css";
 import Navbar from "./components/Navbar";
@@ -18,12 +19,13 @@ import WhyWoolPage from "./pages/WhyWool";
 import Footer from "./components/Footer";
 import Prices from "./pages/Prices";
 import ServiceProviderDashboard from "./pages/ServiceProviderDashboard";
+
 function App() {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
 
 	return (
 		<div>
-			<Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+			<Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} id="nav" />
 			<Routes>
 				<Route path="/" element={<Home isLoggedIn={isLoggedIn} />} />
 				<Route
@@ -56,9 +58,17 @@ function App() {
 					element={<WoolDetails />}
 				/>
 				<Route path="/why-wool" element={<WhyWool />} />
-				<Route path="/service-provider-dashboard" element={<ServiceProviderDashboard />} />
+				<Route
+					path="/service-provider-dashboard"
+					element={<ServiceProviderDashboard />}
+				/>
 			</Routes>
-			<Footer id="footer"/>
+			<Footer id="footer" />
+			<div className="fixed bottom-10 right-10">
+				<a href="#nav">
+					<FaArrowUp className="w-6 h-6" />
+				</a>
+			</div>
 		</div>
 	);
 }
