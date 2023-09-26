@@ -18,12 +18,12 @@ const NewWoolForm = () => {
 			<section className=" py-1 bg-blueGray-50">
 				<div className="w-full lg:w-8/12 px-4 mx-auto mt-6">
 					<div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-100 border-0">
-						<div className="rounded-t bg-white mb-0 px-6 py-6">
+						<div className="rounded-t bg-green-300 mb-0 px-6 py-6">
 							<h1 className="text-5xl font-normal pt-3 pb-3 text-center border-b border-black">
 								Add Your New Wool
 							</h1>
 						</div>
-						<div className="flex-auto px-4 lg:px-10 py-10 pt-0">
+						<div className="bg-green-200 flex-auto px-4 lg:px-10 py-10 pt-0">
 							<form>
 								<h6 className="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
 									Wool Information
