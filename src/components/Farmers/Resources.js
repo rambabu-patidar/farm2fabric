@@ -4,8 +4,8 @@ import BlogCard from "./BlogCard";
 
 const Resources = () => {
 	return (
-		<div className="p-6 mb-5 bg-[#f2f2f2] rounded-2xl flex flex-col justify-center items-center">
-			<header className=" p-4 border-b border-black mb-5">
+		<div className="m-6 mb-5 bg-[#f2f2f2] rounded-2xl flex flex-col justify-center items-center">
+			<header className=" p-4 border-b border-black bg-green-300 w-[100%]">
 				<h1 className="text-5xl font-normal pt-3 pb-3 text-center">
 					Educational Videos and Blogs
 				</h1>
@@ -14,7 +14,7 @@ const Resources = () => {
 				</p>
 			</header>
 
-			<main className="container mx-auto py-8">
+			<main className="container mx-auto p-6 py-8 bg-green-200">
 				<section className="mb-16">
 					<h2 className="text-3xl font-semibold mb-2">
 						The Power of Learning and Training

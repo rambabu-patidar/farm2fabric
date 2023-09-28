@@ -6,10 +6,9 @@ import ItemDetail from "../ItemDetail";
 import woolImage from "../../../assets/wool.jpg";
 import woolThreads from "../../../assets/wool-threads.jpg";
 import sheep from "../../../assets/sheep-in-farm.jpg";
-
 const DUMMY_WOOL_ITEMS = [
 	{
-		uniqueCode: "code1",
+		uniqueCode: "LKAWEI3LK",
 		quantity: 2,
 		quality: "good",
 		location: "Jabalpur",
@@ -18,7 +17,7 @@ const DUMMY_WOOL_ITEMS = [
 		images: [woolImage, woolThreads, sheep],
 	},
 	{
-		uniqueCode: "code2",
+		uniqueCode: "LKAWEER34",
 		quantity: 5,
 		quality: "good",
 		location: "Bhopal",
@@ -27,7 +26,7 @@ const DUMMY_WOOL_ITEMS = [
 		images: [woolImage, woolThreads, sheep],
 	},
 	{
-		uniqueCode: "code3",
+		uniqueCode: "LK834DLDF",
 		quantity: 8,
 		quality: "average",
 		location: "Indore",
