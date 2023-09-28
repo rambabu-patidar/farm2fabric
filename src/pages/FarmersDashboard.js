@@ -7,7 +7,7 @@ import sheep from "../assets/sheep-in-farm.jpg";
 
 const DUMMY_WOOL_ITEMS = [
 	{
-		uniqueCode: "code1",
+		uniqueCode: "LKAWEI3LK",
 		quantity: 2,
 		quality: "good",
 		location: "Jabalpur",
@@ -16,7 +16,7 @@ const DUMMY_WOOL_ITEMS = [
 		images: [woolImage, woolThreads, sheep],
 	},
 	{
-		uniqueCode: "code2",
+		uniqueCode: "LKAWEER34",
 		quantity: 5,
 		quality: "good",
 		location: "Bhopal",
@@ -25,7 +25,7 @@ const DUMMY_WOOL_ITEMS = [
 		images: [woolImage, woolThreads, sheep],
 	},
 	{
-		uniqueCode: "code3",
+		uniqueCode: "LK834DLDF",
 		quantity: 8,
 		quality: "average",
 		location: "Indore",
@@ -42,7 +42,6 @@ const FarmersDashboard = () => {
 			totalWool={20}
 			soldWool={8}
 			farmer_uid={"JKL2675WE9"}
-			uniqueCode={"232kldd3"}
 			woolItems={DUMMY_WOOL_ITEMS}
 		/>
 	);

@@ -184,6 +184,12 @@ const NewWoolForm = () => {
 										</div>
 									</div>
 								</div>
+
+								<div className="flex items-center justify-center">
+									<button className="text-white bg-teal-900 rounded-full p-3 text-center w-[50%]">
+										Submit
+									</button>
+								</div>
 							</form>
 						</div>
 					</div>
