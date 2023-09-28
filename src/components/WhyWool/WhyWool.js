@@ -5,17 +5,17 @@ const WhyWool = () => {
 		<>
 			<div className="bg-custom-color py-16 px-6 md:px-16 min-h-[56vh]">
 				<div className="max-w-3xl mx-auto text-center">
-					<h1 className="text-4xl md:text-5xl font-semibold mb-4">
+					<h1 className="text-4xl md:text-5xl font-semibold mb-4 text-teal-900">
 						Discover the Benefits of Wool
 					</h1>
-					<p className="text-lg md:text-xl mb-16">
+					<p className="text-lg md:text-xl mb-16 text-teal-800">
 						Explore the world of wool and learn why it's the sustainable choice
 						for a wide range of applications. From its natural origins to its
 						remarkable qualities, find out why wool is the preferred fiber.
 					</p>
 					<a
 						href="#why-wool" // Replace with the actual section ID for the wool benefits
-						className="text-xl md:text-2xl bg-black text-white py-2 px-6 rounded-full transition hover:bg-theme-color hover:text-black duration-300 ease-in-out"
+						className="text-xl md:text-2xl bg-teal-900 text-white py-2 px-6 rounded-full transition hover:bg-theme-color hover:text-black duration-300 ease-in-out"
 					>
 						Why Choose Wool?
 					</a>
@@ -26,11 +26,11 @@ const WhyWool = () => {
 				<div className="container mx-auto">
 					<h1
 						id="why-wool"
-						className="text-3xl font-semibold text-center mt-8 my-3"
+						className="text-3xl text-teal-900 font-semibold text-center mt-8 my-3"
 					>
 						THAT'S W H Y W O O L
 					</h1>
-					<p className="text-lg md:text-xl mb-8 w-[50%] italic m-auto">
+					<p className="text-lg md:text-xl mb-8 w-[50%] italic m-auto text-teal-800 text-center">
 						Wool stands out for its natural, sustainable, and biodegradable
 						qualities, offering strength, comfort, safety, humidity regulation,
 						fire resistance, and improved indoor environments.
