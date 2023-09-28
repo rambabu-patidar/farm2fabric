@@ -34,17 +34,17 @@ const News = () => {
 				{/* Hero Section */}
 				<div className="bg-grey-900  py-16 px-6 md:px-16">
 					<div className="max-w-3xl mx-auto text-center">
-						<h1 className="text-4xl md:text-5xl font-semibold mb-4">
+						<h1 className="text-4xl text-teal-900 md:text-5xl font-semibold mb-4">
 							Stay Updated with the Latest News and Market Trends
 						</h1>
-						<p className="text-lg md:text-xl mb-8">
+						<p className="text-lg text-teal-800 md:text-xl mb-8">
 							Stay informed about India's evolving wool sector with real-time
 							market updates, in-depth articles, and a thriving community.
 							Explore wool production, quality, and innovation.
 						</p>
 						<a
 							href="#latest-news" // Replace with the actual section ID for the latest news
-							className="text-xl md:text-2xl bg-black text-white py-2 px-6 rounded-full transition hover:bg-theme-color hover:text-black duration-300 ease-in-out"
+							className="text-xl md:text-2xl bg-teal-900 text-white py-2 px-6 rounded-full transition hover:bg-theme-color hover:text-black duration-300 ease-in-out"
 						>
 							Read Latest News
 						</a>
@@ -52,7 +52,7 @@ const News = () => {
 				</div>
 				<h2
 					id="latest-news"
-					className="text-3xl font-semibold text-center my-8"
+					className="text-3xl font-semibold text-center my-8 text-teal-900"
 				>
 					Latest News
 				</h2>
